@@ -23,7 +23,7 @@ function App() {
       <button onClick={createTodo}>+ new</button>
       <ul>
         {todos.map((todo) => (
-          <li key={todo.id}>{todo.content || alert('please enter value')}</li>
+          <li key={todo.id}>{todo.content}</li>
         ))}
       </ul>
       <div>
