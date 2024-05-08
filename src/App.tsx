@@ -14,7 +14,13 @@ function App() {
   }, []);
 
   function createTodo() {
-    client.models.Todo.create({ content: window.prompt("Todo content")  || alert('please enter value')});
+    let promptContent = window.prompt("Todo content")
+    if(promptContent){
+      client.models.Todo.create({ content: promptContent});
+    }
+    else{
+      window.alert('please enter value')
+    }
   }
 
   return (
