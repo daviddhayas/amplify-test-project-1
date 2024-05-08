@@ -19,7 +19,7 @@ function App() {
 
   return (
     <main>
-      <h1>My todos</h1>
+      <h1>Zen todos</h1>
       <button onClick={createTodo}>+ new</button>
       <ul>
         {todos.map((todo) => (
@@ -27,11 +27,11 @@ function App() {
         ))}
       </ul>
       <div>
-        🥳 App successfully hosted. Try creating a new todo Bro.
+        🥳 App successfully hosted. Try creating a new todo.
         <br />
-        <a href="https://next-release-dev.d1ywzrxfkb9wgg.amplifyapp.com/react/start/quickstart/vite-react-app/#step-2-add-delete-to-do-functionality">
+{/*         <a href="https://next-release-dev.d1ywzrxfkb9wgg.amplifyapp.com/react/start/quickstart/vite-react-app/#step-2-add-delete-to-do-functionality">
           Review next step of this tutorial.
-        </a>
+        </a> */}
       </div>
     </main>
   );
